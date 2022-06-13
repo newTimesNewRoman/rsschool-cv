@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>CV</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -18,21 +18,21 @@
     </nav>
   </header>
   <main class="cv">
-    <section class="cv_left">
+    <div class="cv_left">
       <div class="cv_foto">
-        <img src="./FotoCV.jpg" alt="my_foto">
+        <img src="img/FotoCV.jpg" alt="my_foto">
       </div>
         <section class="cv_contacts">
-          <h2><a name="contacts"></a>Contacts:</h2>
+          <h2><a id="contacts"></a>Contacts:</h2>
           <ul>
-            <li>Location: Moscow, Russia</li>
-            <li>Telegram: @newTimesNewRoman</li>
-            <li>E-mail: Roman.Sukhopleshchenko@yandex.ru</li>
-            <li>Discord: Roman (@newTimesNewRoman)</li>
+            <li><b>Location:</b> Moscow, Russia</li>
+            <li><b>Telegram:</b> @newTimesNewRoman</li>
+            <li><b>E-mail:</b> mail@yandex.ru</li>
+            <li><b>Discord:</b> Roman (@newTimesNewRoman)</li>
           </ul>
         </section>
         <section class="cv_skills">
-          <h2><a name="skills"></a>Proffessional skills:</h2>
+          <h2><a id="skills"></a>Proffessional skills:</h2>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -47,22 +47,23 @@
             <li>Russian (Native)</li>
           </ul>
         </section>
-      </section>
+      </div>
 
-      <section class="cv_right">
+      <div class="cv_right">
         <section class="cv_name">
           <h1>Roman Sukhopleshchenko</h1>
           <h2>Junior Frontend Developer</h2>
         </section>
         <section class="cv_about_me">
-          <h2><a name="about_me"></a>About Me:</h2>
-          <p>Hello everyone, my name is Roman. I am a junior front-end developer.<br>
+          <h2><a id="about_me"></a>About Me:</h2>
+          <p>Hello everyone, my name is Roman.<br> I am a junior front-end developer.
             This is one of the first projects i made in the "Rolling Scopes School".<br>
-            Every day I learn new features of the JavaScript language, HTML and CSS and try to systematize my knowledge.
+            Every day I learn new features of the JavaScript language, HTML and CSS and try to systematize my knowledge.<br>
+            I am also interested in the development of transport, urbanism and investments.
           </p>
         </section>
         <section class="cv_education">
-          <h2><a name="education"></a>Education:</h2>
+          <h2><a id="education"></a>Education:</h2>
           <ul>
             <li>University: Russian Customs Academy (Faculty of Law)</li>
             <li>Courses:
@@ -78,20 +79,40 @@
 
         <section class="cv_experience">
           <h2>Work experience:</h2>
-          <ol>My study projects:
-            <li>https://newTimesNewRoman.github.io/rsschool-cv/cv</li>
-            <li>https://newTimesNewRoman.github.io/rsschool-cv/</li>
+          <ol>
+            <li>
+              <a href="https://newTimesNewRoman.github.io/rsschool-cv/cv">CV#1. Markdown & Git - link to my github</a>
+              </li>
+            <li><a href="https://newTimesNewRoman.github.io/rsschool-cv/">CV#3. CV. Cross Check - link to my github</a>
+              </li>
           </ol>
         </section>
         <section class="cv_code">
           <h2>Code example:</h2>
           <pre>
-            function multiply(a, b){
-              return a * b
-            }
+            
+  function multiply(a, b){
+  return a * b
+  } 
           </pre>
         </section>
-      </section>
+      </div>
   </main>
+  <footer>
+    <div class="footer">
+      <div class="my_github">
+        <a href="https://github.com/newTimesNewRoman"><img src="img/github.svg" alt="my_github_account"></a>
+        <div class="github-link">
+          <a href="https://github.com/newTimesNewRoman">Me on GitHub</a>
+        </div>
+        </div>
+      <div class="year-of-made">
+        <p>2022</p>
+      </div>
+      <div class="rss-logo">
+        <a href="https://rs.school/js-stage0/"><img src="img/rss-logo.png" alt="Rolling_Scopes_School"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

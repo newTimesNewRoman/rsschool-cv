@@ -25,7 +25,7 @@ body {
 }
 
 .cv .cv_left .cv_foto {
-  width: 100%;
+  width: 280px;
   height: 280px;
 }
 
@@ -38,15 +38,46 @@ body {
 .cv .cv_left .cv_skills,
 .cv .cv_left .cv_languages
  {
-  padding: 0 25px;
+  padding: 10px 25px;
   color: #fff;
 }
 
 .cv .cv_right {
   width: 520px;
   background: #fff;
-  padding: 25px;
+  padding: 0px 25px;
 }
+
+.cv .cv_right .cv_about_me,
+.cv .cv_right .cv_education,
+.cv .cv_right .cv_experience,
+.cv .cv_right .cv_code
+ {
+  padding: 10px;
+ }
+
+.cv .cv_right .cv_name {
+  height: 280px;
+  border-bottom: 2px solid #555555;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 150%;
+  margin: 0px;
+  padding-top: 40px;
+}
+
+.cv .cv_right .cv_experience ol a {
+  text-decoration: none;
+  color:#585c68;
+}
+
+.cv .cv_right .cv_code pre {
+  background-color: #333;
+  color: #fff;
+}
+
 .cv_nav {
   display: flex;
   width: 800px;
@@ -63,7 +94,6 @@ body {
 }
 
 .cv_nav li {
-  float: right;
   border-right: 1px solid #bbb;
   list-style-type: none;
   flex: 1;
@@ -75,7 +105,7 @@ body {
 
 .cv_nav li a {
   display: block;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -83,4 +113,47 @@ body {
 
 .cv_nav li a:hover {
   background-color: #0bb5f4;
+}
+
+.footer {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 0px auto;
+  background-color: #333;
+  justify-content: space-around;
+}
+
+.footer .my_github,
+.footer .year-of-made,
+.footer .rss-logo {
+  padding: 20px 0px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .my_github img {
+  width: 80px;
+  height: 80px;
+}
+.footer .my_github .github-link {
+  text-align: center;
+}
+
+.footer .my_github .github-link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .year-of-made p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .rss-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5%;
 }
