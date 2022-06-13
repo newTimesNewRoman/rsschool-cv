@@ -16,7 +16,7 @@ body {
   width: 800px;
   height: auto;
   display: flex;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .cv .cv_left {
@@ -35,7 +35,9 @@ body {
 }
 
 .cv .cv_left .cv_contacts,
-.cv .cv_left .cv_skills {
+.cv .cv_left .cv_skills,
+.cv .cv_left .cv_languages
+ {
   padding: 0 25px;
   color: #fff;
 }
@@ -44,4 +46,41 @@ body {
   width: 520px;
   background: #fff;
   padding: 25px;
+}
+.cv_nav {
+  display: flex;
+  width: 800px;
+  margin: 0px auto;
+  padding-inline-start: 0px;
+  background-color: #333;
+}
+
+.cv_nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.cv_nav li {
+  float: right;
+  border-right: 1px solid #bbb;
+  list-style-type: none;
+  flex: 1;
+}
+
+.cv_nav li:last-child {
+  border-right: none;
+}
+
+.cv_nav li a {
+  display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.cv_nav li a:hover {
+  background-color: #0bb5f4;
 }

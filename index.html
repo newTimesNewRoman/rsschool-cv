@@ -7,13 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul class="cv_nav">
+        <li><a href="#about_me">About Me</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+  </header>
   <main class="cv">
     <section class="cv_left">
       <div class="cv_foto">
         <img src="./FotoCV.jpg" alt="my_foto">
       </div>
         <section class="cv_contacts">
-          <h2>Contacts:</h2>
+          <h2><a name="contacts"></a>Contacts:</h2>
           <ul>
             <li>Location: Moscow, Russia</li>
             <li>Telegram: @newTimesNewRoman</li>
@@ -22,12 +32,19 @@
           </ul>
         </section>
         <section class="cv_skills">
-          <h2>Proffessional skills:</h2>
+          <h2><a name="skills"></a>Proffessional skills:</h2>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript Basics</li>
             <li>Git, GitHub</li>
+          </ul>
+        </section>
+        <section class="cv_languages">
+          <h2>Languages:</h2>
+          <ul>
+            <li>English (Pre-Intermediate)</li>
+            <li>Russian (Native)</li>
           </ul>
         </section>
       </section>
@@ -38,14 +55,14 @@
           <h2>Junior Frontend Developer</h2>
         </section>
         <section class="cv_about_me">
-          <h2>About Me:</h2>
+          <h2><a name="about_me"></a>About Me:</h2>
           <p>Hello everyone, my name is Roman. I am a junior front-end developer.<br>
             This is one of the first projects i made in the "Rolling Scopes School".<br>
             Every day I learn new features of the JavaScript language, HTML and CSS and try to systematize my knowledge.
           </p>
         </section>
         <section class="cv_education">
-          <h2>Education:</h2>
+          <h2><a name="education"></a>Education:</h2>
           <ul>
             <li>University: Russian Customs Academy (Faculty of Law)</li>
             <li>Courses:
@@ -58,13 +75,7 @@
             </li>
           </ul>
         </section>
-        <section class="cv_languages">
-          <h2>Languages:</h2>
-          <ul>
-            <li>English (Pre-Intermediate)</li>
-            <li>Russian (Native)</li>
-          </ul>
-        </section>
+
         <section class="cv_experience">
           <h2>Work experience:</h2>
           <ol>My study projects:
